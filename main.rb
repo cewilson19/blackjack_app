@@ -9,9 +9,13 @@ end
 
 post '/name_input' do
 	puts params['username']
-	redirect '/inline'
+	redirect '/game'
 
 end
+
+get '/game' do
+	erb :game
+end 
 
 get '/inline' do
 	"Hi, directly from the action!"
